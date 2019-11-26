@@ -1,0 +1,18 @@
+# General Development 
+conda create -n ktkernel python=3.7
+source activate ktkernel
+pip install ipython
+conda install pylint
+pip install pyinstaller
+
+# Needed Libaries:
+pip install PyQt5
+conda install numpy
+conda install pandas
+
+# for packaging the app:
+pip install pyinstaller
+
+
+# TODO:
+- find versions for GUI
