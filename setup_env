@@ -1,18 +1,34 @@
 # General Development 
 conda create -n ktkernel python=3.7
 source activate ktkernel
-pip install ipython
-conda install pylint
-pip install pyinstaller
-
-# Needed Libaries:
-pip install PyQt5
-conda install numpy
-conda install pandas
-
-# for packaging the app:
-pip install pyinstaller
+cd exdag
+pyinstaller exdag.spec
 
 
-# TODO:
-- find versions for GUI
+## to create conda environment
+conda create -n *testexdag* python=3.7.3 pyinstaller=3.5 pandas=0.25.3 numpy=1.17.3 matplotlib=3.1.2 seaborn=0.9.0 pyLDAvis=2.1.2 gensim=3.8.1
+## THEN
+conda activate *testexdag*
+pip install IPython
+pip install setuptools==28.8 
+# MAYBE
+pip install --upgrade pyinstaller
+pip install PyQt5==5.13.2 
+
+### versions
+# Python 3.7.3 ## IPython 7.9.0
+# pyinstaller 3.5
+# PyQt5 5.13.2
+# pandas 0.25.3
+# numpy 1.17.3
+# matplotlib 3.1.2
+# seaborn 0.9.0
+# json 2.0.9
+# pyLDAvis 2.1.2
+# gensim 3.8.1
+# pathlib
+
+
+# to package app:
+pyinstaller --onefile exdag.spec # after it has been built once using app.pyinstaller
+

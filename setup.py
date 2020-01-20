@@ -11,7 +11,7 @@ with open(os.path.join(HERE, "README.md")) as fid:
 setup(
     name="data-conversion-app",
     version="1.0.0",
-    description="Description!",
+    description="Read the latest Real Python tutorials",
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/Thomasjkeel",
@@ -21,12 +21,12 @@ setup(
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
     ],
-    packages=["exdag"],
+    packages=["app"],
     include_package_data=True,
     install_requires=[
-        "PyQt5", "numpy", "pandas"
+        "PyQt5", "numpy", "pandas", "seaborn", "matplotlib"
     ],
-    entry_points={"console_scripts": ["exdag=exdag.__main__:main"]},
+    entry_points={"console_scripts": ["edag.__main__:main"]},
 )
