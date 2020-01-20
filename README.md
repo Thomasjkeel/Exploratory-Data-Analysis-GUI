@@ -1,7 +1,7 @@
 # Exploratory Data Analysis GUI (ExDAG)
 A simple GUI that can be used as a platform for storing processes of analysis and visualisations. The GUI itself has a input box for data input/output and dropdown for selecting which process will be carried out.
 
-![Example of the app](exdag_example_img.png)
+![Example of the app](simple_GUI_img.png)
 
 Note: Works with MacOS and Windows
 
