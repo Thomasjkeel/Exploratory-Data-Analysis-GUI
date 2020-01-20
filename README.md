@@ -7,8 +7,12 @@ Note: Works with MacOS and Windows
 
 ## Setup
 1. Create a new python virtual env
-```conda create -n *testexdag* python=3.7.3 pyinstaller=3.6
- pandas=0.25.3 numpy=1.17.3 matplotlib=3.1.2 seaborn=0.9.0```
+```
+conda create -n *testexdag* python=3.7.3 pyinstaller=3.6 pandas=0.25.3 numpy=1.17.3 matplotlib=3.1.2 seaborn=0.9.0
+```
 Then:
-```conda activate *testexdag* 
-pip install setuptools==28.8 pip install PyQt5==5.13.2 ```
+```
+# activate environments and install other requirements
+conda activate *testexdag* 
+pip install setuptools==28.8 pip install PyQt5==5.13.2 
+```
